@@ -95,12 +95,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD6339F11DFE6D9B00C048A5 /* Build configuration list for PBXNativeTarget "SwiftRichPushApp" */;
 			buildPhases = (
+				6E07B579C2FCE598E7081CE9 /* [CP] Check Pods Manifest.lock */,
 				B7D05FCBBF64C3F8AFCF5609 /* 📦 Check Pods Manifest.lock */,
 				BD6339DB1DFE6D9B00C048A5 /* Sources */,
 				BD6339DC1DFE6D9B00C048A5 /* Frameworks */,
 				BD6339DD1DFE6D9B00C048A5 /* Resources */,
 				1B2A077606CB713973281B53 /* 📦 Embed Pods Frameworks */,
-				B1D243FE09715FA42EBDE435 /* 📦 Copy Pods Resources */,
+				42E7C052992B47BB3F0DE05A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -119,7 +120,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
-				ORGANIZATIONNAME = "NIFTY Corporation";
+				ORGANIZATIONNAME = "NIFCLOUD Corporation";
 				TargetAttributes = {
 					BD6339DE1DFE6D9B00C048A5 = {
 						CreatedOnToolsVersion = 8.1;
@@ -174,19 +175,40 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftRichPushApp/Pods-SwiftRichPushApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B1D243FE09715FA42EBDE435 /* 📦 Copy Pods Resources */ = {
+		42E7C052992B47BB3F0DE05A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftRichPushApp/Pods-SwiftRichPushApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/NCMB/NCMB.framework",
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NCMB.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftRichPushApp/Pods-SwiftRichPushApp-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftRichPushApp/Pods-SwiftRichPushApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E07B579C2FCE598E7081CE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftRichPushApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B7D05FCBBF64C3F8AFCF5609 /* 📦 Check Pods Manifest.lock */ = {
@@ -340,7 +362,7 @@
 				INFOPLIST_FILE = SwiftRichPushApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobilebackend.niftycloud.SwiftRichPushApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilebackend.nifcloud.SwiftRichPushApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -355,7 +377,7 @@
 				INFOPLIST_FILE = SwiftRichPushApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobilebackend.niftycloud.SwiftRichPushApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilebackend.nifcloud.SwiftRichPushApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
