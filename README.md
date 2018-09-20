@@ -164,7 +164,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 //  SwiftPushApp_
 //
 //  Created by Ikeda Natsumo on 2016/12/08.
-//  Copyright © 2016年 NIFTY Corporation. All rights reserved.
+//  Copyright 2017 FUJITSU CLOUD TECHNOLOGIES LIMITED All Rights Reserved.
 //
 import UIKit
 import NCMB
