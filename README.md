@@ -1,5 +1,5 @@
 # 【Swift iOS10】<br>プッシュ通知受信時にWebViewを表示しよう(リッチプッシュ)
-*2016/10/26作成*
+*2016/10/26作成（2018/12/15更新）*
 
 ![画像1](/readme-img/001.png)
 
@@ -8,7 +8,7 @@
 * リッチプッシュ機能を使うと、プッシュ通知にURLを設定し配信を行った場合、ユーザープッシュ通知を開封する際にWebViewとして表示することが可能です
 * 簡単な操作ですぐに [ニフクラ mobile backend](https://mbaas.nifcloud.com/)の機能を体験いただけます★☆
 * このサンプルはiOS10に対応しています
- * iOS8以上でご利用いただけます
+  * iOS8以上でご利用いただけます
 
 ## ニフクラ mobile backendって何？？
 スマートフォンアプリのバックエンド機能（プッシュ通知・データストア・会員管理・ファイルストア・SNS連携・位置情報検索・スクリプト）が**開発不要**、しかも基本**無料**(注1)で使えるクラウドサービス！
@@ -21,28 +21,29 @@
 * macOS Sierra 10.12
 * Xcode ver. 8.0
 * iPhone6 ver. 10.0.1
- * このサンプルアプリは、プッシュ通知を受信する必要があるため実機ビルドが必要です
+* iOS SDK v3.0.0
+  * このサンプルアプリは、プッシュ通知を受信する必要があるため実機ビルドが必要です
 
 ※上記内容で動作確認をしています
 
 ## プッシュ通知の仕組み
 * ニフクラ mobile backendのプッシュ通知は、iOSが提供している通知サービスを利用しています
- * iOSの通知サービス　__APNs（Apple Push Notification Service）__
+  * iOSの通知サービス　__APNs（Apple Push Notification Service）__
 
  ![画像10](/readme-img/010.png)
 
 * 上図のように、アプリ（Xcode）・サーバー（ニフクラ mobile backend）・通知サービス（APNs）の間でやり取りを行うため、認証が必要になります
- * 認証に必要な鍵や証明書の作成は作業手順の「0.プッシュ通知機能使うための準備」で行います
+  * 認証に必要な鍵や証明書の作成は作業手順の「0.プッシュ通知機能使うための準備」で行います
 
 ## 作業の手順
 ### 0.プッシュ通知機能使うための準備
 __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発用)](https://github.com/natsumo/iOS_Certificate)__
 * 上記のドキュメントをご覧の上、必要な証明書類の作成をお願いします
- * 証明書の作成には[Apple Developer Program](https://developer.apple.com/account/)の登録（有料）が必要です
+  * 証明書の作成には[Apple Developer Program](https://developer.apple.com/account/)の登録（有料）が必要です
 
 ![画像i002](/readme-img/i002.png)
 
-### 1. [ニフクラ mobile backend](https://mbaas.nifcloud.com/)の会員登録とログイン→アプリ作成と設定
+### 1. [ニフクラ mobile backend](https://mbaas.nifcloud.com/signup.htm)の会員登録とログイン→アプリ作成と設定
 * 上記リンクから会員登録（無料）をします。登録ができたらログインをすると下図のように「アプリの新規作成」画面が出るのでアプリを作成します
 
 ![画像3](/readme-img/003.png)
@@ -61,7 +62,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 * 下記リンクをクリックしてプロジェクトをダウンロードをMacにダウンロードします
 
- * __[SwiftRichPushApp](https://github.com/natsumo/SwiftRichPushApp/archive/master.zip)__
+  * __[SwiftRichPushApp](https://github.com/natsumo/SwiftRichPushApp/archive/master.zip)__
 
 ### 3. Xcodeでアプリを起動
 
@@ -82,19 +83,19 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 ![画像07](/readme-img/007.png)
 
 * それぞれ`YOUR_NCMB_APPLICATION_KEY`と`YOUR_NCMB_CLIENT_KEY`の部分を書き換えます
- * このとき、ダブルクォーテーション（`"`）を消さないように注意してください！
+  * このとき、ダブルクォーテーション（`"`）を消さないように注意してください！
 * 書き換え終わったら`command + s`キーで保存をします
 
 ### 5. 実機ビルド
 * 始めて実機ビルドをする場合は、Xcodeにアカウント（AppleID）の登録をします
- * メニューバーの「Xcode」＞「Preferences...」を選択します
- * Accounts画面が開いたら、左下の「＋」をクリックします。
- * Apple IDとPasswordを入力して、「Add」をクリックします
+  * メニューバーの「Xcode」＞「Preferences...」を選択します
+  * Accounts画面が開いたら、左下の「＋」をクリックします。
+  * Apple IDとPasswordを入力して、「Add」をクリックします
 
  ![画像i29](/readme-img/i029.png)
 
- * 追加されると、下図のようになります。追加した情報があっていればOKです
- * 確認できたら閉じます。
+  * 追加されると、下図のようになります。追加した情報があっていればOKです
+  * 確認できたら閉じます。
 
  ![画像i30](/readme-img/i030.png)
 
@@ -103,15 +104,15 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 ![画像14](/readme-img/014.png)
 
 * 「Identity」＞「Bundle Identifier」を入力します
- * 「Bundle Identifier」にはAppID作成時に指定した「Bundle ID」を入力してください
+  * 「Bundle Identifier」にはAppID作成時に指定した「Bundle ID」を入力してください
 * 「Signing(Debug)」＞「Provisioning Profile」を設定します
- * 今回使用するプロビジョニングプロファイルをプルダウンから選択します
- * プロビジョニングプロファイルはダウンロードしたものを一度__ダブルクリック__して認識させておく必要があります（プルダウンに表示されない場合はダブルクリックを実施後設定してください）
- * 選択すると以下のようになります
+  * 今回使用するプロビジョニングプロファイルをプルダウンから選択します
+  * プロビジョニングプロファイルはダウンロードしたものを一度__ダブルクリック__して認識させておく必要があります（プルダウンに表示されない場合はダブルクリックを実施後設定してください）
+  * 選択すると以下のようになります
  ![画像15](/readme-img/015.png)
 
 * 「TARGETS」＞「Capabilities」を開き、「Push Notifications」を__ON__に設定します
- * 設定すると以下のようになります
+  * 設定すると以下のようになります
  ![画像16](/readme-img/016.png)
 
 * 設定は完了です
@@ -120,7 +121,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 ### 6.動作確認
 * インストールしたアプリを起動します
- * プッシュ通知の許可を求めるアラートが出たら、必ず許可してください！
+  * プッシュ通知の許可を求めるアラートが出たら、必ず許可してください！
 * 起動されたらこの時点でデバイストークンが取得されます
 * [ニフクラ mobile backend](https://mbaas.nifcloud.com/)のダッシュボードで「データストア」＞「installation」クラスを確認してみましょう！
 
@@ -141,7 +142,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 * アプリを__完全に閉じた状態__でプッシュ通知を送った場合は、プッシュ通知が受信されます
 * 受信したプッシュ通知をタップするとWebViewが画面に表示されます
 * 画面下の「Close」をタップするとWebViewが閉じ、裏で起動していたアプリが表示されます
- * リッチプッシュによって表示されるWebViewは一度い閉じると再表示できません。
+  * リッチプッシュによって表示されるWebViewは一度い閉じると再表示できません。
 
 ![画像1](/readme-img/001.png)
 
@@ -151,7 +152,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 ## 解説
 ### SDKのインポートと初期設定
 * ニフクラ mobile backend の[ドキュメント（クイックスタート）](https://mbaas.nifcloud.com/doc/current/introduction/quickstart_ios.html)をSwift版に書き換えたドキュメントをご用意していますので、ご活用ください
- * [SwiftでmBaaSを始めよう！(＜CocoaPods＞でuse_framewoks!を有効にした方法)](http://qiita.com/natsumo/items/57d3a4d9be16b0490965)
+  * [SwiftでmBaaSを始めよう！(＜CocoaPods＞でuse_framewoks!を有効にした方法)](http://qiita.com/natsumo/items/57d3a4d9be16b0490965)
 
 ### コード紹介
 #### デバイストークン取得とニフクラ mobile backendへの保存
@@ -281,4 +282,4 @@ iOS9以降の端末ではhttps通信でないとリッチプッシュのWebView�
 
 ## 参考
 * 他にもさまざまなサンプルアプリを作っていますのでよろしければ見てください～
- * __https://github.com/natsumo__
+  * __https://github.com/natsumo__
