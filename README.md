@@ -18,8 +18,8 @@
 ![画像2](/readme-img/002.png)
 
 ## 動作環境
-* macOS Sierra 10.12
-* Xcode ver. 8.0
+* macOS 10.13.6 (High Sierra)
+* Xcode ver. 10.0
 * iPhone6 ver. 10.0.1
 * iOS SDK v3.0.0
   * このサンプルアプリは、プッシュ通知を受信する必要があるため実機ビルドが必要です
