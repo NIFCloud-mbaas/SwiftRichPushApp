@@ -6,7 +6,7 @@ target 'SwiftRichPushApp' do
     use_frameworks!
     
     # Pods for SwiftRichPushApp
-    pod 'NCMB', :git => 'https://github.com/NIFCloud-mbaas/ncmb_swift', :branch => 'develop'
+    pod 'NCMB', :git => 'https://github.com/NIFCLOUD-mbaas/ncmb_swift', :branch => 'develop'
     
 end
 
