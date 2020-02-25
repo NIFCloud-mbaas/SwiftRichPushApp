@@ -18,6 +18,7 @@
 /* Begin PBXFileReference section */
 		0A02A380F1E9A61A07AED567 /* Pods-SwiftRichPushApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftRichPushApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftRichPushApp/Pods-SwiftRichPushApp.debug.xcconfig"; sourceTree = "<group>"; };
 		43D9A5009021A6AFBC6A0334 /* Pods-SwiftRichPushApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftRichPushApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftRichPushApp/Pods-SwiftRichPushApp.release.xcconfig"; sourceTree = "<group>"; };
+		840E562F2405015900E903AA /* SwiftRichPushApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftRichPushApp.entitlements; sourceTree = "<group>"; };
 		BD6339DF1DFE6D9B00C048A5 /* SwiftRichPushApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftRichPushApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6339E21DFE6D9B00C048A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD6339E41DFE6D9B00C048A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +79,7 @@
 		BD6339E11DFE6D9B00C048A5 /* SwiftRichPushApp */ = {
 			isa = PBXGroup;
 			children = (
+				840E562F2405015900E903AA /* SwiftRichPushApp.entitlements */,
 				BD6339E21DFE6D9B00C048A5 /* AppDelegate.swift */,
 				BD6339E41DFE6D9B00C048A5 /* ViewController.swift */,
 				BD6339E61DFE6D9B00C048A5 /* Main.storyboard */,
@@ -124,8 +126,15 @@
 				TargetAttributes = {
 					BD6339DE1DFE6D9B00C048A5 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = FKLWW9HU95;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -386,13 +395,14 @@
 			baseConfigurationReference = 0A02A380F1E9A61A07AED567 /* Pods-SwiftRichPushApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftRichPushApp/SwiftRichPushApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FKLWW9HU95;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SwiftRichPushApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobilebackend.niftycloud.SwiftRichPushAppCanC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilebackend.niftycloud.SwiftRichPushApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -404,13 +414,14 @@
 			baseConfigurationReference = 43D9A5009021A6AFBC6A0334 /* Pods-SwiftRichPushApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftRichPushApp/SwiftRichPushApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FKLWW9HU95;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SwiftRichPushApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobilebackend.niftycloud.SwiftRichPushAppCanC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilebackend.niftycloud.SwiftRichPushApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
