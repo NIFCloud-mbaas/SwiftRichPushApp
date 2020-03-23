@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  SwiftPushApp_
+//  SwiftRichPushApp
 //
-//  Created by Ikeda Natsumo on 2016/12/08.
-//  Copyright 2019 FUJITSU CLOUD TECHNOLOGIES LIMITED All Rights Reserved.
+//  Created by Ikeda Natsumo on 2016/12/08 (update on 2020/03/23).
+//  Copyright 2020 FUJITSU CLOUD TECHNOLOGIES LIMITED All Rights Reserved.
 //
 
 import UIKit
