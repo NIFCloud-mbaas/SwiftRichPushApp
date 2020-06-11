@@ -4,16 +4,16 @@
 ![画像1](/readme-img/001.png)
 
 ## 概要
-* [ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)の『プッシュ通知』機能において、プッシュ通知にURLを設定し配信できる『リッチプッシュ』機能を実装したサンプルプロジェクトです
+* [ニフクラmobile backend](https://mbaas.nifcloud.com/)の『プッシュ通知』機能において、プッシュ通知にURLを設定し配信できる『リッチプッシュ』機能を実装したサンプルプロジェクトです
 * リッチプッシュ機能を使うと、プッシュ通知にURLを設定し配信を行った場合、ユーザープッシュ通知を開封する際にWebViewとして表示することが可能です
-* 簡単な操作ですぐに [ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)の機能を体験いただけます★☆
+* 簡単な操作ですぐに [ニフクラmobile backend](https://mbaas.nifcloud.com/)の機能を体験いただけます★☆
 * このサンプルはiOS10に対応しています
  * iOS8以上でご利用いただけます
 
-## ニフティクラウドmobile backendって何？？
+## ニフクラmobile backendって何？？
 スマートフォンアプリのバックエンド機能（プッシュ通知・データストア・会員管理・ファイルストア・SNS連携・位置情報検索・スクリプト）が**開発不要**、しかも基本**無料**(注1)で使えるクラウドサービス！
 
-注1：詳しくは[こちら](http://mb.cloud.nifty.com/price.htm)をご覧ください
+注1：詳しくは[こちら](https://mbaas.nifcloud.com/price.htm)をご覧ください
 
 ![画像2](/readme-img/002.png)
 
@@ -26,29 +26,29 @@
 ※上記内容で動作確認をしています
 
 ## プッシュ通知の仕組み
-* ニフティクラウドmobile backendのプッシュ通知は、iOSが提供している通知サービスを利用しています
+* ニフクラmobile backendのプッシュ通知は、iOSが提供している通知サービスを利用しています
  * iOSの通知サービス　__APNs（Apple Push Notification Service）__
 
  ![画像10](/readme-img/010.png)
 
-* 上図のように、アプリ（Xcode）・サーバー（ニフティクラウドmobile backend）・通知サービス（APNs）の間でやり取りを行うため、認証が必要になります
+* 上図のように、アプリ（Xcode）・サーバー（ニフクラmobile backend）・通知サービス（APNs）の間でやり取りを行うため、認証が必要になります
  * 認証に必要な鍵や証明書の作成は作業手順の「0.プッシュ通知機能使うための準備」で行います
 
 ## 作業の手順
 ### 0.プッシュ通知機能使うための準備
-__[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発用)](https://github.com/natsumo/iOS_Certificate)__
+__[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発用)](https://github.com/NIFCLOUD-mbaas/iOS_Certificate)__
 * 上記のドキュメントをご覧の上、必要な証明書類の作成をお願いします
  * 証明書の作成には[Apple Developer Program](https://developer.apple.com/account/)の登録（有料）が必要です
 
 ![画像i002](/readme-img/i002.png)
 
-### 1. [ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)の会員登録とログイン→アプリ作成と設定
+### 1. [ニフクラmobile backend](https://mbaas.nifcloud.com/)の会員登録とログイン→アプリ作成と設定
 * 上記リンクから会員登録（無料）をします。登録ができたらログインをすると下図のように「アプリの新規作成」画面が出るのでアプリを作成します
 
 ![画像3](/readme-img/003.png)
 
 * アプリ作成されると下図のような画面になります
-* この２種類のAPIキー（アプリケーションキーとクライアントキー）はXcodeで作成するiOSアプリに[ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)を紐付けるために使用します
+* この２種類のAPIキー（アプリケーションキーとクライアントキー）はXcodeで作成するiOSアプリに[ニフクラmobile backend](https://mbaas.nifcloud.com/)を紐付けるために使用します
 
 ![画像4](/readme-img/004.png)
 
@@ -57,11 +57,11 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 ![画像5](/readme-img/005.png)
 
-### 2. [GitHub](https://github.com/natsumo/SwiftPushApp.git)からサンプルプロジェクトのダウンロード
+### 2. [GitHub](https://github.com/NIFCLOUD-mbaas/SwiftRichPushApp.git)からサンプルプロジェクトのダウンロード
 
 * 下記リンクをクリックしてプロジェクトをダウンロードをMacにダウンロードします
 
- * __[SwiftRichPushApp](https://github.com/natsumo/SwiftRichPushApp/archive/master.zip)__
+ * __[SwiftRichPushApp](https://github.com/NIFCLOUD-mbaas/SwiftRichPushApp/archive/master.zip)__
 
 ### 3. Xcodeでアプリを起動
 
@@ -77,7 +77,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 ### 4. APIキーの設定
 
 * `AppDelegate.swift`を編集します
-* 先程[ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)のダッシュボード上で確認したAPIキーを貼り付けます
+* 先程[ニフクラmobile backend](https://mbaas.nifcloud.com/)のダッシュボード上で確認したAPIキーを貼り付けます
 
 ![画像07](/readme-img/007.png)
 
@@ -122,13 +122,13 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 * インストールしたアプリを起動します
  * プッシュ通知の許可を求めるアラートが出たら、必ず許可してください！
 * 起動されたらこの時点でデバイストークンが取得されます
-* [ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)のダッシュボードで「データストア」＞「installation」クラスを確認してみましょう！
+* [ニフクラmobile backend](https://mbaas.nifcloud.com/)のダッシュボードで「データストア」＞「installation」クラスを確認してみましょう！
 
 ![画像12](/readme-img/012.png)
 
 ### 7.リッチプッシュを送ってWebViewを表示させましょう
 * 動作確認のため、アプリを完全に閉じておきましょう
-* [ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)のダッシュボードで「プッシュ通知」＞「＋新しいプッシュ通知」をクリックします
+* [ニフクラmobile backend](https://mbaas.nifcloud.com/)のダッシュボードで「プッシュ通知」＞「＋新しいプッシュ通知」をクリックします
 * プッシュ通知のフォームが開かれます
 * タイトル、メッセージ、__URL__ を入力してプッシュ通知を作成します
 
@@ -138,7 +138,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 * アプリの状態により、WebView（リッチプッシュ）の表示のされ方は以下のようになります
 
 #### アプリが起動していないときプッシュ通知を受信した場合
-* アプリを__完全に閉じた状態__でプッシュ通知を送った場合は、プッシュ通知が受信されます
+* アプリを __完全に閉じた状態__ でプッシュ通知を送った場合は、プッシュ通知が受信されます
 * 受信したプッシュ通知をタップするとWebViewが画面に表示されます
 * 画面下の「Close」をタップするとWebViewが閉じ、裏で起動していたアプリが表示されます
  * リッチプッシュによって表示されるWebViewは一度い閉じると再表示できません。
@@ -146,15 +146,14 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 ![画像1](/readme-img/001.png)
 
 #### アプリが起動しているときプッシュ通知を受信した場合
-* アプリを起動している（画面に表示中/バックグラウンド起動中）状態でプッシュ通知を送った場合は、プッシュ通知自体は__表示されません__！（iOSの仕様）ただし、プッシュ通知が受信できていないわけではなく、正しく配信されていれば、WebViewが画面に表示されます
+* アプリを起動している（画面に表示中/バックグラウンド起動中）状態でプッシュ通知を送った場合は、プッシュ通知自体は __表示されません__ ！（iOSの仕様）ただし、プッシュ通知が受信できていないわけではなく、正しく配信されていれば、WebViewが画面に表示されます
 
 ## 解説
 ### SDKのインポートと初期設定
-* ニフティクラウドmobile backend の[ドキュメント（クイックスタート）](http://mb.cloud.nifty.com/doc/current/introduction/quickstart_ios.html)をSwift版に書き換えたドキュメントをご用意していますので、ご活用ください
- * [SwiftでmBaaSを始めよう！(＜CocoaPods＞でuse_framewoks!を有効にした方法)](http://qiita.com/natsumo/items/57d3a4d9be16b0490965)
+* ニフクラmobile backend の[ドキュメント（クイックスタート）](https://mbaas.nifcloud.com/doc/current/introduction/quickstart_swift.html)をSwift版に書き換えたドキュメントをご用意していますので、ご活用ください
 
 ### コード紹介
-#### デバイストークン取得とニフティクラウドmobile backendへの保存
+#### デバイストークン取得とニフクラmobile backendへの保存
  * `AppDelegate.swift`の`didFinishLaunchingWithOptions`メソッドにAPNsに対してデバイストークンの要求するコードを記述し、デバイストークンが取得された後に呼び出される`didRegisterForRemoteNotificationsWithDeviceToken`メソッドを追記をします
  * デバイストークンの要求はiOSのバージョンによってコードが異なります
 
@@ -278,7 +277,3 @@ iOS9以降の端末ではhttps通信でないとリッチプッシュのWebView�
     <true/>
 </dict>
 ```
-
-## 参考
-* 他にもさまざまなサンプルアプリを作っていますのでよろしければ見てください～
- * __https://github.com/natsumo__
