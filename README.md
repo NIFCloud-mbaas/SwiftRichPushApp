@@ -17,9 +17,10 @@
 ![画像2](/readme-img/002.png)
 
 ## 動作環境
-* Mac OS Mojave 10.14.4
-* Xcode ver.11.2 (11B52)
-* iPhone 8  iOS 13.3
+
+* Mac OS 10.15(Catalina)
+* Xcode ver. 12.0
+* iPhone11 (iOS14.0)
  * このサンプルアプリは、プッシュ通知を受信する必要があるため実機ビルドが必要です
 
 ※上記内容で動作確認をしています
