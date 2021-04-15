@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		485A9B4026281FB200AE5B55 /* SwiftRichPushAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485A9B3F26281FB200AE5B55 /* SwiftRichPushAppUITests.swift */; };
+		6C61740FAC4BFEF70AD436F7 /* Pods_SwiftRichPushAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32C6549794B4F8E0CA7F6E7E /* Pods_SwiftRichPushAppUITests.framework */; };
 		BD6339E31DFE6D9B00C048A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6339E21DFE6D9B00C048A5 /* AppDelegate.swift */; };
 		BD6339E51DFE6D9B00C048A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6339E41DFE6D9B00C048A5 /* ViewController.swift */; };
 		BD6339E81DFE6D9B00C048A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD6339E61DFE6D9B00C048A5 /* Main.storyboard */; };
@@ -15,10 +17,26 @@
 		CFCD7D5CB852684DD8B0D304 /* Pods_SwiftRichPushApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F183CC653A6C38E62057CE81 /* Pods_SwiftRichPushApp.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		485A9B4226281FB200AE5B55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD6339D71DFE6D9B00C048A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD6339DE1DFE6D9B00C048A5;
+			remoteInfo = SwiftRichPushApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		0A02A380F1E9A61A07AED567 /* Pods-SwiftRichPushApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftRichPushApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftRichPushApp/Pods-SwiftRichPushApp.debug.xcconfig"; sourceTree = "<group>"; };
+		32C6549794B4F8E0CA7F6E7E /* Pods_SwiftRichPushAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftRichPushAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43D9A5009021A6AFBC6A0334 /* Pods-SwiftRichPushApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftRichPushApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftRichPushApp/Pods-SwiftRichPushApp.release.xcconfig"; sourceTree = "<group>"; };
+		485A9B3D26281FB200AE5B55 /* SwiftRichPushAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftRichPushAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		485A9B3F26281FB200AE5B55 /* SwiftRichPushAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftRichPushAppUITests.swift; sourceTree = "<group>"; };
+		485A9B4126281FB200AE5B55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F377E7AABC1751C9B9D8E33 /* Pods-SwiftRichPushAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftRichPushAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftRichPushAppUITests/Pods-SwiftRichPushAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		840E562F2405015900E903AA /* SwiftRichPushApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftRichPushApp.entitlements; sourceTree = "<group>"; };
+		97883FAED6200635BFD644EA /* Pods-SwiftRichPushAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftRichPushAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftRichPushAppUITests/Pods-SwiftRichPushAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BD6339DF1DFE6D9B00C048A5 /* SwiftRichPushApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftRichPushApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6339E21DFE6D9B00C048A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD6339E41DFE6D9B00C048A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +48,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		485A9B3A26281FB200AE5B55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C61740FAC4BFEF70AD436F7 /* Pods_SwiftRichPushAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD6339DC1DFE6D9B00C048A5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,10 +67,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		485A9B3E26281FB200AE5B55 /* SwiftRichPushAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				485A9B3F26281FB200AE5B55 /* SwiftRichPushAppUITests.swift */,
+				485A9B4126281FB200AE5B55 /* Info.plist */,
+			);
+			path = SwiftRichPushAppUITests;
+			sourceTree = "<group>";
+		};
 		58400F3EB43592DF836EF6AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				F183CC653A6C38E62057CE81 /* Pods_SwiftRichPushApp.framework */,
+				32C6549794B4F8E0CA7F6E7E /* Pods_SwiftRichPushAppUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -54,6 +90,8 @@
 			children = (
 				0A02A380F1E9A61A07AED567 /* Pods-SwiftRichPushApp.debug.xcconfig */,
 				43D9A5009021A6AFBC6A0334 /* Pods-SwiftRichPushApp.release.xcconfig */,
+				7F377E7AABC1751C9B9D8E33 /* Pods-SwiftRichPushAppUITests.debug.xcconfig */,
+				97883FAED6200635BFD644EA /* Pods-SwiftRichPushAppUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -62,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				BD6339E11DFE6D9B00C048A5 /* SwiftRichPushApp */,
+				485A9B3E26281FB200AE5B55 /* SwiftRichPushAppUITests */,
 				BD6339E01DFE6D9B00C048A5 /* Products */,
 				66314A772ED96C92734973FD /* Pods */,
 				58400F3EB43592DF836EF6AA /* Frameworks */,
@@ -72,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				BD6339DF1DFE6D9B00C048A5 /* SwiftRichPushApp.app */,
+				485A9B3D26281FB200AE5B55 /* SwiftRichPushAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,6 +133,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		485A9B3C26281FB200AE5B55 /* SwiftRichPushAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 485A9B4426281FB200AE5B55 /* Build configuration list for PBXNativeTarget "SwiftRichPushAppUITests" */;
+			buildPhases = (
+				D3A4E2C0D2C417E7B3700235 /* [CP] Check Pods Manifest.lock */,
+				485A9B3926281FB200AE5B55 /* Sources */,
+				485A9B3A26281FB200AE5B55 /* Frameworks */,
+				485A9B3B26281FB200AE5B55 /* Resources */,
+				5308DC11739981ACD566BA8A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				485A9B4326281FB200AE5B55 /* PBXTargetDependency */,
+			);
+			name = SwiftRichPushAppUITests;
+			productName = SwiftRichPushAppUITests;
+			productReference = 485A9B3D26281FB200AE5B55 /* SwiftRichPushAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		BD6339DE1DFE6D9B00C048A5 /* SwiftRichPushApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD6339F11DFE6D9B00C048A5 /* Build configuration list for PBXNativeTarget "SwiftRichPushApp" */;
@@ -120,10 +180,14 @@
 		BD6339D71DFE6D9B00C048A5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "NIFCLOUD mobile backend";
 				TargetAttributes = {
+					485A9B3C26281FB200AE5B55 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = BD6339DE1DFE6D9B00C048A5;
+					};
 					BD6339DE1DFE6D9B00C048A5 = {
 						CreatedOnToolsVersion = 8.1;
 						SystemCapabilities = {
@@ -152,11 +216,19 @@
 			projectRoot = "";
 			targets = (
 				BD6339DE1DFE6D9B00C048A5 /* SwiftRichPushApp */,
+				485A9B3C26281FB200AE5B55 /* SwiftRichPushAppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		485A9B3B26281FB200AE5B55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD6339DD1DFE6D9B00C048A5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,18 +257,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftRichPushApp/Pods-SwiftRichPushApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5308DC11739981ACD566BA8A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftRichPushAppUITests/Pods-SwiftRichPushAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftRichPushAppUITests/Pods-SwiftRichPushAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftRichPushAppUITests/Pods-SwiftRichPushAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		896DA1FADE61463B181ED8BE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwiftRichPushApp/Pods-SwiftRichPushApp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/NCMB/NCMB.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftRichPushApp/Pods-SwiftRichPushApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NCMB.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftRichPushApp/Pods-SwiftRichPushApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -216,6 +304,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D3A4E2C0D2C417E7B3700235 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftRichPushAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DE43B2D5F27EB71C1CE3A5A5 /* [CP] Check Pods Manifest.lock */ = {
@@ -243,6 +353,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		485A9B3926281FB200AE5B55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485A9B4026281FB200AE5B55 /* SwiftRichPushAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD6339DB1DFE6D9B00C048A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -253,6 +371,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		485A9B4326281FB200AE5B55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD6339DE1DFE6D9B00C048A5 /* SwiftRichPushApp */;
+			targetProxy = 485A9B4226281FB200AE5B55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BD6339E61DFE6D9B00C048A5 /* Main.storyboard */ = {
@@ -274,6 +400,71 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		485A9B4526281FB200AE5B55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F377E7AABC1751C9B9D8E33 /* Pods-SwiftRichPushAppUITests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = "$(inherited)";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SwiftRichPushAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = asia.vitalify.SwiftRichPushAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftRichPushApp;
+			};
+			name = Debug;
+		};
+		485A9B4626281FB200AE5B55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97883FAED6200635BFD644EA /* Pods-SwiftRichPushAppUITests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = "$(inherited)";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SwiftRichPushAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = asia.vitalify.SwiftRichPushAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftRichPushApp;
+			};
+			name = Release;
+		};
 		BD6339EF1DFE6D9B00C048A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -437,6 +628,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		485A9B4426281FB200AE5B55 /* Build configuration list for PBXNativeTarget "SwiftRichPushAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				485A9B4526281FB200AE5B55 /* Debug */,
+				485A9B4626281FB200AE5B55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BD6339DA1DFE6D9B00C048A5 /* Build configuration list for PBXProject "SwiftRichPushApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
